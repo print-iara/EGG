@@ -1,0 +1,54 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Ejercicio2</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- Conocido el número en matemática PI π, pedir al usuario que ingrese el valor del radio
+		de una circunferencia y calcular y mostrar por pantalla el área y perímetro. Recuerde que
+		para calcular el área y el perímetro se utilizan las siguientes fórmulas -->
+		<div class="container">
+			<div class="card col-md-6 mt-5 text-center">
+				<h2 class="card-title text-secondary text-center">
+					Calcular área y perímetro prompt
+				</h2>
+
+				<p id="area" class="ms-3"></p>
+				<p id="perimetro" class="ms-3"></p>
+			</div>
+
+			<div class="card col-md-6 mt-5 text-center px-4">
+				<h2 class="card-title text-secondary text-center">
+					Calcular área y perímetro listener
+				</h2>
+				<input
+					type="text"
+					id="radio"
+					class="form-control"
+					placeholder="ingresa el radio"
+				/>
+				<div class="d-flex flex-column align-items-center">
+					<button class="btn btn-warning mt-3" id="boton">Calcular!</button>
+				</div>
+
+				<p id="area2"></p>
+				<p id="perimetro2"></p>
+			</div>
+		</div>
+		<script src="code.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

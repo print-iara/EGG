@@ -1,0 +1,76 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 5</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!-- Construir un programa que simule un menú de opciones para realizar las cuatro
+		operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+		numéricos enteros. El usuario, además, debe especificar la operación con el primer
+		carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’
+		o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división. -->
+		<div class="container">
+			<div class="d-flex justify-content-center mt-5">
+				<div class="card" style="width: 25rem">
+					<div class="card-body">
+						<h1>Calculadora</h1>
+						<form>
+							<label for="numero1"> 1° Número</label>
+							<input
+								type="number"
+								id="numero1"
+								class="form-control mb-3"
+								placeholder="Ingresa el 1er número"
+							/>
+
+							<label for="numero2"> 2° Numero</label>
+							<input
+								type="number"
+								id="numero2"
+								class="form-control mb-3"
+								placeholder="Ingresa el 2do numero"
+							/>
+
+							<label for="operador" class="text-danger fw-semibold">
+								Operador
+							</label>
+							<select
+								class="form-select mb-3"
+								aria-label="Default select example"
+								id="operador"
+								placeholder="Ingresa un operador"
+							>
+								<option selected value="S">Suma</option>
+								<option value="R">Resta</option>
+								<option value="M">Multiplicación</option>
+								<option value="D">Division</option>
+							</select>
+
+							<div>
+								<button class="btn btn-danger mt-3" id="boton">Calcular</button>
+							</div>
+						</form>
+
+						<div id="resultado" class="my-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+		<script src="code.js"></script>
+	</body>
+</html>

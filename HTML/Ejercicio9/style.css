@@ -1,0 +1,52 @@
+h1{
+    color: #3a8182;
+}
+
+p strong{
+    color: #EB2319;
+}
+#subtitulo{
+    color: #0E2FF5;
+}
+p a{
+    color: #EB2319; 
+}
+p a em{
+    color:#0E2FF5;
+}
+p .especial{
+    color: #972da1;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead{
+    color:#F4B04D;
+}
+
+tfoot{
+    color: #EB2319;  
+}
+td{
+    color:#6EAF59;
+}
+td strong{
+    color:#F4B04D;
+}
+#adicional{
+    color: #AEAE6C;
+}
+tbody tr th{
+    color: #EB2319;  
+}
+tbody .especial{
+    color:#F4B04D;
+}
+
+#adicional p a{
+    color: #3a8182;
+}
+#especial{
+    color: violet;
+}

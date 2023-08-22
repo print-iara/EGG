@@ -1,0 +1,199 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+			crossorigin="anonymous"
+		/>
+
+		<title>Extra del 3 al 6</title>
+	</head>
+	<body>
+		<!-- Siguiendo el ejercicio de Bootstrap, haremos una landing page que contenga un navbar.
+		Investigar el navbar en Bootstrap, con botones a todas las páginas previamente
+		mencionadas -->
+		<div class="container">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#"
+									>Home(Current)</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#productos">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#registro">registro</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Además, le sumaremos una imagen a la landing page usando las clases para la etiqueta
+			<img> que nos provee Bootstrap. Ejemplo: -->
+			<header>
+				<img
+					src="images/fondo-header.PNG"
+					alt="imagen de egg"
+					class="card-img-top"
+				/>
+			</header>
+			<!-- Por último, sumarle a la landing cartas que muestren productos de esta manera -->
+			<section class="py-3 mt-0" id="productos">
+				<h3 class="text-center pb-2 text-dark bg-warning">Productos</h3>
+				<div class="d-flex flex-wrap">
+					<div class="col-6 pe-4">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title fw-bold text-warning">
+									Ejemplo de Producto 1
+								</h5>
+								<p class="card-text">Descripción producto</p>
+								<a href="detalle1.html" class="btn btn-warning btn-sm fw-bolder"
+									>Ver Producto</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title fw-bold text-warning">
+									Ejemplo de Producto 2
+								</h5>
+								<p class="card-text">Descripción producto</p>
+								<a href="detalle2.html" class="btn btn-warning btn-sm fw-bolder"
+									>Ver Producto</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 pe-4">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title fw-bold text-warning">
+									Ejemplo de Producto 3
+								</h5>
+								<p class="card-text">Descripción producto</p>
+								<a href="detalle3.html" class="btn btn-warning btn-sm fw-bolder"
+									>Ver Producto</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title fw-bold text-warning">
+									Ejemplo de Producto 4
+								</h5>
+								<p class="card-text">Descripción producto</p>
+								<a href="detalle4.html" class="btn btn-warning btn-sm fw-bolder"
+									>Ver Producto</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 pe-4">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title fw-bold text-warning">
+									Ejemplo de Producto 5
+								</h5>
+								<p class="card-text">Descripción producto</p>
+								<a href="detalle5.html" class="btn btn-warning btn-sm fw-bolder"
+									>Ver Producto</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title fw-bold text-warning">
+									Ejemplo de Producto 6
+								</h5>
+								<p class="card-text">Descripción producto</p>
+								<a href="detalle6.html" class="btn btn-warning btn-sm fw-bolder"
+									>Ver Producto</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- registro -->
+			<section
+				id="registro"
+				class="bg-secondary text-light d-flex flex-column align-items-center pb-5"
+			>
+				<h1 class="text-center text-warning pt-4 fw-bold">
+					Formulario de Registro
+				</h1>
+				<form class="col-6">
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label fw-semibold"
+							>Email:</label
+						>
+						<input
+							type="email"
+							class="form-control"
+							id="exampleInputEmail1"
+							aria-describedby="emailHelp"
+							placeholder="Ingrese su mail"
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label fw-semibold"
+							>Contraseña:</label
+						>
+						<input
+							type="password"
+							class="form-control"
+							id="exampleInputPassword1"
+							placeholder="Ingrese su contraseña"
+						/>
+					</div>
+					<div class="mb-3 form-check">
+						<input
+							type="checkbox"
+							class="form-check-input"
+							id="exampleCheck1"
+						/>
+						<label class="form-check-label" for="exampleCheck1"
+							>Recuerdame</label
+						>
+					</div>
+					<button type="submit" class="btn btn-warning">Registrar</button>
+				</form>
+			</section>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

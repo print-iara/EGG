@@ -1,0 +1,29 @@
+
+*{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+   
+    line-height: 30px;
+    letter-spacing: 0.05rem;
+}
+h3{
+    
+    color: rgb(30, 119, 139);
+}
+ul>li{
+    list-style-image: url(Check\ Mark.png);
+   
+}
+.lista>li{
+    list-style-image: url(Inactive\ Statecirculo.png);
+    vertical-align: middle;
+ 
+}
+
+
+.redes>li{
+    list-style:none;
+ 
+}
+a{
+    text-decoration: none;
+}

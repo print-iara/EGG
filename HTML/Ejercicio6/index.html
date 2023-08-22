@@ -1,0 +1,41 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 6</title>
+	</head>
+	<body>
+		<!-- Por último, vamos a crear un formulario para registrar un usuario -->
+		<h1>Registrar un usuario</h1>
+		<form>
+			<label for="nombre">Nombre del usuario</label><br />
+			<input type="text" name="nombre" /><br />
+			<label for="password">Contraseña del usuario</label><br />
+			<input type="password" name="password" /><br />
+			<label for="edad">Edad del usuario</label><br />
+			<input type="number" name="edad" /><br />
+			<label for="fecha">Fecha de nacimiento del usuario</label><br />
+			<input type="date" name="fecha" /><br />
+			<label for="sexo">Sexo del usuario</label><br />
+
+			<input type="radio" name="sexo" value="Hombre" />Hombre <br />
+			<input type="radio" name="sexo" value="Mujer" />Mujer <br />
+			<input type="radio" name="sexo" value="otro" />Prefiero no decir <br />
+
+			<label for="pais">País de nacimiento del usuario</label><br />
+			<select name="país">
+				<option value="Argentina">Argentina</option>
+				<option value="Uruguay">Uruguay</option>
+				<option value="Brasil">Brasil</option>
+				<option value="Bolivia">Bolivia</option>
+				<option value="Chile">Chile</option>
+			</select>
+			<br />
+			<button type="submit">Enviar</button>
+			<button type="reset">Borrar</button>
+		</form>
+	</body>
+</html>
