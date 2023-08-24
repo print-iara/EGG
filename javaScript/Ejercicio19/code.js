@@ -8,12 +8,12 @@
 // 0.5. Mostrar los dos arreglos resultantes: el ordenado de 50 elementos y el combinado
 // de 20.
 
-let ar = Array.from({ length: 50 }, () => Math.floor(Math.random() * 10));
+let a = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100));
 
-ar.sort();
+a.sort();
 
-let b = ar.slice(0, 20);
+let b = a.slice(0, 20);
 b.fill(0.5, 10, 20);
 
-document.getElementById("vector1").textContent = ar;
-document.getElementById("vector2").textContent = b;
+document.getElementById("vector1").innerHTML = a;
+document.getElementById("vector2").innerHTML = b;
