@@ -10,7 +10,7 @@ const modificar = (vector) => {
 	let num = vector[vector.length - 1] + aux;
 	vector.push(parseInt(vector[vector.length - 1]) + parseInt(aux));
 
-	return vector;
+	return vector.join("-");
 };
 
 document.getElementById("resultado").textContent = modificar(matriz);
